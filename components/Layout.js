@@ -7,7 +7,7 @@ import {
     Typography,
     Container,
     Link,
-    createMuiTheme,
+    createTheme,
     ThemeProvider,
     CssBaseline,
     Switch,
@@ -34,7 +34,7 @@ export default function Layout({ children, title, description}) {
     const router = useRouter();
     const { state, dispatch } = useContext(Store);
     const { darkMode, cart, userInfo } = state;
-    const theme = createMuiTheme({
+    const theme = createTheme({
         typography:{
             h1: {
                 fontSize: '1.6rem',
